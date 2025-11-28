@@ -6,6 +6,8 @@ import Quickshell
 import Quickshell.Services.SystemTray
 import QtQuick
 
+import "./kblayout" as KbLayoutMod
+
 Item {
     id: root
 
@@ -114,7 +116,7 @@ Item {
 
         Popout {
             name: "kblayout"
-            sourceComponent: KbLayout {}
+            sourceComponent: KbLayoutMod.KbLayout {}
         }
 
         Popout {
